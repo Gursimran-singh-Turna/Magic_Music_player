@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Magic music player</title>
+  <style>header{text-align: center;font-size: 50px;color: rgb(209, 0, 216);font-weight: bold;text-shadow: 4px 4px 5px black;}
+  body{ background-image: url('https://jooinn.com/images/animal-on-forest-4.jpg');background-repeat: no-repeat;
+  background-size: cover; }
+  #sd1{width: fit-content; height: auto;background-color: rgba(255, 255, 255, 0.418);margin-left: auto;
+  margin-right: auto;display: block;}
+  h1{color: red;font-size: 45px;text-align: center;}
+  ol{font-size: 30px;}
+  </style>
+</head>
+<body>
+  <header>Magic Music Player</header>
+  <script>
+    window.addEventListener("click",play);
+    function play(){
+      document.getElementById("b").play();  
+      document.getElementById("a").pause();
+      document.getElementById("c").pause();
+      document.getElementById("d").pause();
+    }
+    window.addEventListener("mouseover",play1);    //Yeh rishta kya kya kehlata hai
+    function play1(){
+      document.getElementById("a").play();
+      document.getElementById("b").pause();
+      document.getElementById("c").pause();
+      document.getElementById("d").pause();
+    }
+    function ok(){
+      document.getElementById("sd1").style.display="none";
+    }
+    window.addEventListener("dblclick",play2);
+    function play2(){ //Saath Nibhana Saathiya
+      document.getElementById("c").play();
+    document.getElementById("a").pause();
+    document.getElementById("b").pause();
+    document.getElementById("d").pause();
+    }
+    window.addEventListener("keypress",play3);
+    function play3(){ //Kiya Kya
+      document.getElementById("d").play();
+    document.getElementById("a").pause();
+    document.getElementById("b").pause();
+    document.getElementById("c").pause();
+    }
+  </script>
+  <audio controls style="display: none;" loop id="a">
+    <source src="https://drive.google.com/uc?id=1Z6dfSSFcpjZbVY1Y5HEmw8uH7GpEz_Cb">
+  </audio>
+  <audio controls style="display: none;" loop id="b" >
+    <source src="https://drive.google.com/uc?id=16Wrp9rcl_oTNPRu34R2oikn0qyrNYGkz">
+  </audio>
+  <audio controls loop id="c" style="display: none;">
+    <source src="https://drive.google.com/uc?id=1OnFgWjUxzNGS9EmkdghdoEpF1muXssqh"> 
+  </audio>
+  <audio controls loop id="d" style="margin-left: auto;margin-right: auto;display: block;">
+    <source src="https://drive.google.com/uc?id=1_-A_JYycgvqhHsiyut4FRruKzjdmJTUN">
+  </audio>
+  <div id="sd1">
+    <h1>How to use Magic music Player</h1>
+    <ol>
+      <li><h3>Hover Throughout the screen to play song 1</h3></li>
+      <li><h3>Click in almost center of screen to play song 2.</h3></li>
+      <li><h3>Double Click on screen to play song 3</h3></li>
+      <li><h3>Press Any Key to play song of visible music control bar.i.e song 4 </h3></li>
+      <li><h3>If one sound will start then other will pause Automatically</h3></li>
+    </ol>
+    <button type="button" class="btn btn-success btn-lg btn-block" style="margin-left: auto; margin-right: auto; display: block; border-radius: 30px;width: 90%;" onclick="ok()" >OK</button>
+  </div>
+</html>
