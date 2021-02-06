@@ -9,7 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <title>Magic music player</title>
   <style>header{text-align: center;font-size: 50px;color: rgb(209, 0, 216);font-weight: bold;text-shadow: 4px 4px 5px black;}
-  body{ background-image: url('https://jooinn.com/images/animal-on-forest-4.jpg');background-repeat: no-repeat;
+  body{ background-image: url('music.jpg');background-repeat: no-repeat;
   background-size: cover; }
   #sd1{width: fit-content; height: auto;background-color: rgba(255, 255, 255, 0.418);margin-left: auto;
   margin-right: auto;display: block;}
@@ -21,13 +21,13 @@
   <header>Magic Music Player</header>
   <script>
     window.addEventListener("click",play);
-    function play(){
+    function play(){                               //Proper Patola
       document.getElementById("b").play();  
       document.getElementById("a").pause();
       document.getElementById("c").pause();
       document.getElementById("d").pause();
     }
-    window.addEventListener("mouseover",play1);    //Yeh rishta kya kya kehlata hai
+    window.addEventListener("mouseover",play1);    //Yeh Delhi hai mere yaar
     function play1(){
       document.getElementById("a").play();
       document.getElementById("b").pause();
@@ -38,7 +38,7 @@
       document.getElementById("sd1").style.display="none";
     }
     window.addEventListener("dblclick",play2);
-    function play2(){ //Saath Nibhana Saathiya
+    function play2(){                              //Teri sanu lor nahi
       document.getElementById("c").play();
     document.getElementById("a").pause();
     document.getElementById("b").pause();
@@ -53,13 +53,13 @@
     }
   </script>
   <audio controls style="display: none;" loop id="a">
-    <source src="https://drive.google.com/uc?id=1Z6dfSSFcpjZbVY1Y5HEmw8uH7GpEz_Cb">
+    <source src="Yeh-Delhi-hai-mere-yaar.m4a">
   </audio>
   <audio controls style="display: none;" loop id="b" >
-    <source src="https://drive.google.com/uc?id=16Wrp9rcl_oTNPRu34R2oikn0qyrNYGkz">
+    <source src="Proper-Patola-Official-Video-Namaste-(You2Audio.Com).mp4">
   </audio>
   <audio controls loop id="c" style="display: none;">
-    <source src="https://drive.google.com/uc?id=1OnFgWjUxzNGS9EmkdghdoEpF1muXssqh"> 
+    <source src="Teri-Sanu-Lorr-Ni-Pavvan-Pav-Dharia-Manav-Sangha.mp4"> 
   </audio>
   <audio controls loop id="d" style="margin-left: auto;margin-right: auto;display: block;">
     <source src="https://drive.google.com/uc?id=1_-A_JYycgvqhHsiyut4FRruKzjdmJTUN">
